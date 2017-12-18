@@ -1,0 +1,123 @@
+/**********************
+    DEFAULTS
+**********************/
+@import url('https://fonts.googleapis.com/css?family=Copse|Source+Sans+Pro');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 20px;
+    line-height:1.5;
+/*    font-family:sans-serif;*/
+    background-color:lightsteelblue;
+}
+
+/**********************
+    LAYOUT
+**********************/
+.page{
+/*    display:none;*/
+    position:absolute;
+    padding:1rem;
+    margin-top:3rem;
+    transform:translateX(-200%);
+    transition:transform 1.5s;
+}
+.page.active{
+/*    display:block;*/
+    position:absolute;
+    transform:translateX(0%);
+    transition:transform 1.5s;
+}
+.not{
+    display:none;
+}
+.attribution{
+    margin:1rem;
+}
+.attribution img{
+    width:80%;
+    
+}
+.attribution img:hover{
+    
+}
+/**********************
+    SEARCH BAR
+**********************/
+
+.search{
+    margin:0;
+    position:fixed;
+    height:3rem;
+    z-index: 100;
+    top:0;
+    left:0;
+    right:0;
+    border-bottom: 1px solid #333;
+    background-color: white;
+    box-shadow:0 2px 4px #000;
+}
+#search-button{
+    position:absolute;
+    top:0;
+    right:0;
+    width:3rem;
+    height:3rem;
+    z-index:120;
+/*    padding:0.5rem;*/
+    cursor:pointer;
+}
+#search-input{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 3rem;
+    width:100%;
+    z-index:110;
+    padding-left:1rem;
+    font-size: 1.8rem;
+}
+
+/**********************
+    SEARCH RESULTS
+**********************/
+.content{
+    border:3px solid #bbb;
+    border-style: inset;
+    padding:1rem;
+    overflow:auto;
+    clear:both;
+    background-color:white;
+}
+.poster{
+    float:left;
+    background-color:blue;
+    width:150px;
+    height:8rem;
+    min-height: 150px;
+    margin: 0 0.5rem 0.5rem 0;
+    cursor:pointer;
+}
+.movie-title{
+    font-family: 'Copse',serif;
+    font-size:1rem;
+}
+.movie-desc{
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size:1rem;
+    color:#999;
+}
+.topHeading{
+    font-family: 'Source Sans Pro,sans-serif';
+}
+/**********************
+    RECOMMENDATIONS
+**********************/
+
+
+/**********************
+    MISC
+**********************/
